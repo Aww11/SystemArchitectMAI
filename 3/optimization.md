@@ -178,4 +178,3 @@ DELETE FROM users WHERE id = 4 RETURNING id, username;
 3. FOREIGN KEY обеспечивают целостность данных
 4. ON DELETE CASCADE автоматически очищает связанные записи
 5. Партиционирование не применялось, так как таблицы небольшого размера и FOREIGN KEY важнее для данной схемы
-```
