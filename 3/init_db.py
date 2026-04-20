@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://store_user:store_password@postgres:5432/store_db")
+DATABASE_URL = "postgresql://store_user:store_password@postgres:5432/store_db"
 
 def wait_for_db():
     """Ждем пока БД станет доступной"""
